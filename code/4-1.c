@@ -6,13 +6,13 @@ int main(){
     char ch;
     scanf("%d %d %c", &num1, &num2, &ch);
     if(ch == '+'){
-        printf(num1 + num2);
+        printf("%d",num1 + num2);
     }else if(ch == '-'){
-        printf(num1 - num2);
+        printf("%d",num1 - num2);
     }else if(ch == '*'){
-        printf(num1 * num2);
+        printf("%d",num1 * num2);
     }else{
-        printf(num1/num2);
+        printf("%d",num1/num2);
     }
     return 0;
 }
