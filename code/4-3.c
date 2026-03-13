@@ -4,6 +4,10 @@
 int main(){
     int num;
     scanf("%d", &num);
+    if(num < 2){
+        printf("false");
+        return 0;
+    }
     int i;
     for(i = 2; i <= sqrt(num); i++){
         if(num%i == 0){
