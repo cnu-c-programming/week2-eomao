@@ -1,20 +1,21 @@
 #include <stdio.h>
-#include <math.h>
 
-int main(){
+int main() {
     int num;
     scanf("%d", &num);
-    if(num < 2){
+
+    if (num < 2) {
         printf("false");
         return 0;
     }
-    int i;
-    for(i = 2; i <= sqrt(num); i++){
-        if(num%i == 0){
+
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
             printf("false");
             return 0;
         }
     }
+
     printf("true");
     return 0;
 }
